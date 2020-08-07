@@ -13,6 +13,7 @@
 		FC981CD824DCE648005F249D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC981CD624DCE648005F249D /* Main.storyboard */; };
 		FC981CDA24DCE64A005F249D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC981CD924DCE64A005F249D /* Assets.xcassets */; };
 		FC981CDD24DCE64A005F249D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC981CDB24DCE64A005F249D /* LaunchScreen.storyboard */; };
+		FC981CE824DCE70B005F249D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC981CE724DCE70B005F249D /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FC981CD924DCE64A005F249D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC981CDC24DCE64A005F249D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC981CDE24DCE64A005F249D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC981CE724DCE70B005F249D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		FC981CCF24DCE648005F249D /* ios-mvvc */ = {
 			isa = PBXGroup;
 			children = (
+				FC981CE624DCE6FA005F249D /* Model */,
 				FC981CE424DCE6C7005F249D /* View */,
 				FC981CE524DCE6CD005F249D /* Controller */,
 				FC981CD024DCE648005F249D /* AppDelegate.swift */,
@@ -81,6 +84,14 @@
 				FC981CD424DCE648005F249D /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC981CE624DCE6FA005F249D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC981CE724DCE70B005F249D /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,7 @@
 				FC981CD524DCE648005F249D /* ViewController.swift in Sources */,
 				FC981CD124DCE648005F249D /* AppDelegate.swift in Sources */,
 				FC981CD324DCE648005F249D /* SceneDelegate.swift in Sources */,
+				FC981CE824DCE70B005F249D /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
