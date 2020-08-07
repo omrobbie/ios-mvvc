@@ -46,6 +46,9 @@
                             <outlet property="tableView" destination="5ny-Ey-S0I" id="l4F-f5-HRS"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="homeView" destination="8bC-Xf-vdC" id="beU-Zs-0sj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
