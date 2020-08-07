@@ -8,9 +8,16 @@
 
 import UIKit
 
+protocol ViewDelegate: AnyObject {
+
+    func didSelectRowAt(indexPath: IndexPath)
+}
+
 class View: UIView {
 
     @IBOutlet weak var tableView: UITableView!
+
+    weak var delegate: ViewDelegate?
 
     var data = dummyData
 }
@@ -27,5 +34,10 @@ extension View: UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.text = item.name
         cell.detailTextLabel?.text = item.title
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        delegate?.didSelectRowAt(indexPath: indexPath)
     }
 }
