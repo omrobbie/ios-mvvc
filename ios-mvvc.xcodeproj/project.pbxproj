@@ -56,15 +56,31 @@
 		FC981CCF24DCE648005F249D /* ios-mvvc */ = {
 			isa = PBXGroup;
 			children = (
+				FC981CE424DCE6C7005F249D /* View */,
+				FC981CE524DCE6CD005F249D /* Controller */,
 				FC981CD024DCE648005F249D /* AppDelegate.swift */,
 				FC981CD224DCE648005F249D /* SceneDelegate.swift */,
-				FC981CD424DCE648005F249D /* ViewController.swift */,
-				FC981CD624DCE648005F249D /* Main.storyboard */,
 				FC981CD924DCE64A005F249D /* Assets.xcassets */,
 				FC981CDB24DCE64A005F249D /* LaunchScreen.storyboard */,
 				FC981CDE24DCE64A005F249D /* Info.plist */,
 			);
 			path = "ios-mvvc";
+			sourceTree = "<group>";
+		};
+		FC981CE424DCE6C7005F249D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC981CD624DCE648005F249D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC981CE524DCE6CD005F249D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC981CD424DCE648005F249D /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
