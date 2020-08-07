@@ -11,18 +11,21 @@ import UIKit
 class View: UIView {
 
     @IBOutlet weak var tableView: UITableView!
+
+    var data = dummyData
 }
 
 extension View: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return data.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
-        cell.textLabel?.text = "Item \(indexPath.row)"
-        cell.detailTextLabel?.text = "Title"
+        let item = data[indexPath.row]
+        cell.textLabel?.text = item.name
+        cell.detailTextLabel?.text = item.title
         return cell
     }
 }
